@@ -1,0 +1,42 @@
+/* Custom scrollbar styling (Tailwind scrollbar utilities might not work via CDN without plugins) */
+.scrollbar-thin::-webkit-scrollbar {
+    height: 8px;
+    width: 8px;
+}
+.scrollbar-thumb-indigo-400::-webkit-scrollbar-thumb {
+    background-color: #a5b4fc; /* indigo-400 approx */
+    border-radius: 10px;
+}
+.scrollbar-thumb-indigo-400::-webkit-scrollbar-thumb:hover {
+    background-color: #818cf8; /* indigo-500 approx */
+}
+.scrollbar-track-indigo-100::-webkit-scrollbar-track {
+    background-color: #e0e7ff; /* indigo-100 approx */
+    border-radius: 10px;
+}
+
+/* Ensure page visibility is handled by JS */
+.page.hidden {
+    display: none;
+}
+.page.active {
+    display: block; /* or flex/grid depending on the page layout */
+}
+#login-page.active {
+    display: flex;
+}
+
+/* For Chart.js responsiveness inside a flex/grid container */
+.chart-container {
+    position: relative;
+    /* height: 40vh;
+    width: 80vw; */ /* Adjust as needed, or let Tailwind width/height control it */
+    /* max-width: 100%;
+    max-height: 320px; /* md:h-96 */
+}
+
+/* Ensure login error message with content is visible */
+#login-error:not(:empty) {
+    display: block;
+}
+
