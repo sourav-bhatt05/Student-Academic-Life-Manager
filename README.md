@@ -1,4 +1,4 @@
-<!-- The Student Academic Life Manager is a web-based application designed to help students manage different aspects of their academic life in one place.
+The Student Academic Life Manager is a web-based application designed to help students manage different aspects of their academic life in one place.
 It includes features like a dashboard, timetable, assignments tracker, quizzes, attendance records, and upcoming events.
 
 The project is built entirely with:
@@ -9,7 +9,7 @@ CSS → Styling, layout, and responsive design
 
 JavaScript → Interactive features and data handling
 
-🎯 Project Goals
+ Project Goals
 
 Provide students with a centralized academic hub.
 
@@ -17,7 +17,7 @@ Allow easy access to schedules, assignments, quizzes, and event details.
 
 Keep data and UI interactive without requiring page reloads.
 
-🛠 Features & Functionality
+Features & Functionality
 
 1. Login System
 
@@ -65,4 +65,4 @@ Can be improved with date-wise attendance logs.
 
 Shows upcoming academic events.
 
-Could be enhanced with event registration and reminders. -->
+Could be enhanced with event registration and reminders. 
