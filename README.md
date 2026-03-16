@@ -1,68 +1,129 @@
-The Student Academic Life Manager is a web-based application designed to help students manage different aspects of their academic life in one place.
-It includes features like a dashboard, timetable, assignments tracker, quizzes, attendance records, and upcoming events.
+# 🎓 StudentHub — Academic Life Manager
 
-The project is built entirely with:
+> A beautifully designed, fully interactive academic dashboard for students — built with pure HTML, CSS, and JavaScript. No frameworks, no build tools, just open and go.
 
-HTML → Structure of the pages & tabs
+---
 
-CSS → Styling, layout, and responsive design
+## ✨ Features
 
-JavaScript → Interactive features and data handling
+### 🔐 Login System
+- Demo credentials: **Username:** `student` · **Password:** `password123`
+- Session persists until you click Sign Out
 
- Project Goals
+### 📊 Dashboard
+- **Live stat cards** — CGPA, SGPA, Assignments Done, Average Attendance (calculated dynamically)
+- **Today's Classes** — auto-pulled from your timetable for the current day of the week
 
-Provide students with a centralized academic hub.
+### 📅 Timetable
+- Full weekly schedule rendered from data
+- Color-coded slots: Lecture, Practical, Tutorial, MATLAB, Lunch
+- **Today's row highlighted** with a gold indicator 📍
 
-Allow easy access to schedules, assignments, quizzes, and event details.
+### 📋 Assignments
+- Add, mark done ✅, and delete assignments
+- Sorted: pending on top, completed below
+- **Persisted in `localStorage`** — survives page refresh
 
-Keep data and UI interactive without requiring page reloads.
+### ⭐ Quizzes
+- 5 subjects: **DBMS, OOPS, Maths (MA), Python (PY), Humanities (HS)**
+- 4 questions per subject with multiple-choice options
+- Correct/incorrect answer revealed after each pick (green/red)
+- Progress bar, live score, and result screen with emoji rating
 
-Features & Functionality
+### 📈 Attendance
+- Doughnut chart (via Chart.js) + subject-wise progress bars
+- **Click any subject row** to update its attendance % — chart and bar update live
+- Color coding: 🟢 ≥75% · 🟡 60–74% · 🔴 <60%
+- Changes saved to `localStorage`
 
-1. Login System
+### 📆 Events
+- Academic calendar with key dates (Mid-Sem, End-Sem, Viva, Results etc.)
 
-Simple login form.
+### 📝 Notes
+- Multiple named notebooks (General, Maths, DBMS — and add your own)
+- Full textarea editor per notebook
+- **Auto-saves** to `localStorage` with a "✓ Saved" badge
+- Add and delete notebooks
 
-Hardcoded sample credentials for demonstration (e.g., username: student, password: password).
+### 🎓 GPA Calculator
+- Pre-filled subject table with credits and grade selectors (O, A+, A, B+, B, C, D, F)
+- **SGPA calculated live** as you change grades
+- Add more subject rows dynamically
 
-On successful login → switches to the main app UI.
+### 🍅 Pomodoro Timer
+- SVG ring countdown with gradient stroke
+- Modes: **Focus (25 min)** · **Short Break (5 min)** · **Long Break (15 min)**
+- Start / Pause / Reset
+- Session dot tracker (4 sessions per cycle)
+- Toast notification when a session ends
 
-2. Dashboard
+---
 
-Quick access to important sections.
+## 🌙 Dark Mode
+Click the **moon icon** 🌙 in the navbar to toggle dark/light mode — preference saved to `localStorage`.
 
-Can be expanded to show student info, quick stats, and notifications.
+## 🕐 Live Clock
+The navbar shows a live updating clock with date and AM/PM time.
 
-3. Timetable
+## 🍞 Toast Notifications
+Non-intrusive slide-in toasts for all user actions (add, delete, update, quiz feedback etc.)
 
-Dynamic timetable rendering with color-coded slots.
+---
 
-Different subjects have different background colors for better readability.
+## 🚀 Getting Started
 
-Table updates automatically from predefined data.
+No installation needed. Just open the file in your browser:
 
-4. Assignments
+```bash
+# Clone the repo
+git clone https://github.com/YOUR_USERNAME/Student-Academic-Life-Manager.git
 
-Displays a list of assignments with due dates and subjects.
+# Open in browser
+open index.html
+```
 
-Can be extended to include submission status, grades, and upload features.
+Or simply **double-click** `index.html` — it runs entirely in the browser.
 
-5. Quizzes
+---
 
-Interactive multiple-choice quiz system.
+## 🛠️ Tech Stack
 
-Shows question, options, and handles user selections.
+| Layer | Technology |
+|-------|-----------|
+| Structure | HTML5 |
+| Styling | Vanilla CSS (CSS Variables, Flexbox, Grid) |
+| Logic | Vanilla JavaScript (ES6+) |
+| Charts | [Chart.js](https://www.chartjs.org/) |
+| Fonts | [Outfit](https://fonts.google.com/specimen/Outfit) + DM Sans (Google Fonts) |
+| Storage | Browser `localStorage` |
 
-Will calculate and display score at the end (your current code is incomplete here — the handleQuizNext() function needs finishing).
+---
 
-6. Attendance
+## 📁 Project Structure
 
-Displays subject-wise attendance percentage.
+```
+Student-Academic-Life-Manager/
+├── index.html      # App shell, login page, navbar, tabs container
+├── style.css       # All styles including dark mode, animations, tab layouts
+├── script.js       # All logic: tabs, quiz, assignments, GPA calc, timer
+└── README.md
+```
 
-Can be improved with date-wise attendance logs.
+---
 
-7. Events
+## 🔑 Demo Credentials
 
-Shows upcoming academic events.
+| Field | Value |
+|-------|-------|
+| Username | `student` |
+| Password | `password123` |
 
-Could be enhanced with event registration and reminders. 
+---
+
+## 📸 Preview
+
+> Dashboard in Dark Mode — with live stat cards, today's schedule, and 9 fully functional tabs.
+
+---
+
+*Built by Sourav Bhatt · B.Tech CSE · 3rd Year*
